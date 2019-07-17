@@ -9,6 +9,9 @@ const useStyles = makeStyles(theme => ({
       height: 70,
       backgroundColor: '#210700'
     },
+    typo: {
+      padding: "10px"
+    }
   }));
 
 export default function Footer() {
@@ -16,8 +19,8 @@ export default function Footer() {
 
   return (
     <div className={classes.root}>
-        <Typography variant="h6" color="secondary">
-          Mocha Class Beta 준비중 입니다!  Contact : ksgj2000@gmail.com <br/>
+        <Typography variant="subtitle2" color="secondary" className={classes.typo} >
+          Mocha Class Beta 준비중 입니다!   Contact : ksgj2000@gmail.com <br/>
           By REDIKINS, Comming Soon!
         </Typography>
     </div>

@@ -32,6 +32,9 @@ function Navbar() {
             <MenuItem>
               <Link component={RouterLink} to="/Team" color="secondary">Team</Link>
             </MenuItem>
+            <MenuItem>
+              <Link component={RouterLink} to="/Class" color="secondary">Class</Link>
+            </MenuItem>
           </Toolbar>
         </AppBar>
     </div>

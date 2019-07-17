@@ -1,52 +1,56 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(3, 2),
-    margin: 20,
+    width: "100%"
   },
+  card: {
+    padding: theme.spacing(3, 2),
+    margin: "30px",
+    height: "200px"
+  }
 }));
 
 export default function Introduce() {
   const classes = useStyles();
 
   return (
-    <div>
-      <Paper className={classes.root}>
+    <div className={classes.root}>
+      <Card className={classes.card}>
         <Typography variant="h5" component="h3">
-          This is a sheet of paper.
-        </Typography>
+          Mocha Class is
+        </Typography><br/>
         <Typography component="p">
-          Paper can be used to build surface or other elements for your application.
+          다양한 취미 여가 클래스들을 즐겨 보세요!
         </Typography>
-      </Paper>
-      <Paper className={classes.root}>
+      </Card>
+      <Card className={classes.card}>
         <Typography variant="h5" component="h3">
-          This is a sheet of paper.
-        </Typography>
+          Intro 1
+        </Typography><br/>
         <Typography component="p">
-          Paper can be used to build surface or other elements for your application.
+           Intro 1 description
         </Typography>
-      </Paper>
-      <Paper className={classes.root}>
+      </Card>
+      <Card className={classes.card}>
         <Typography variant="h5" component="h3">
-          This is a sheet of paper.
-        </Typography>
+          Intro 2
+        </Typography><br/>
         <Typography component="p">
-          Paper can be used to build surface or other elements for your application.
+          Intro 2 description
         </Typography>
-      </Paper>
-      <Paper className={classes.root}>
+      </Card>
+      <Card className={classes.card}>
         <Typography variant="h5" component="h3">
-          This is a sheet of paper.
+          Intro 3
         </Typography>
-        <Typography component="p">
-          Paper can be used to build surface or other elements for your application.
+        <Typography component="p"><br/>
+          Intro 3 description
         </Typography>
-      </Paper>
+      </Card>
     </div>
   );
 }
