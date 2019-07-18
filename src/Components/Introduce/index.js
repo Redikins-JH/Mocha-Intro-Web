@@ -5,12 +5,13 @@ import Card from '@material-ui/core/Card';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    width: "100%"
+    width: "100%",
+ 
   },
   card: {
     padding: theme.spacing(3, 2),
     margin: "30px",
-    height: "200px"
+    height: "150px"
   }
 }));
 
