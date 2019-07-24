@@ -57,11 +57,11 @@ export default function MainImage() {
       <Paper className={classes.root}>
         <div className={classes.overlay} />
           <div className={classes.content}>
-            <Typography component="h4" variant="h4" color="secondary" gutterBottom>
+            <Typography component="h5" variant="h5" color="secondary" gutterBottom>
               주변을 둘러보세요
             </Typography>
             <br/>
-            <Typography variant="h4" color="secondary" paragraph>
+            <Typography variant="h5" color="secondary" paragraph>
               다양한 취미/여가 클래스들을 <br/><br/> 찾아 보세요
             </Typography>
             

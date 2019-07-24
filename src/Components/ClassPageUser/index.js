@@ -17,3 +17,5 @@ User.propTypes = {
 User.defaultProps = {
     user: 'apple'
 };
+
+////사용 보류 함수

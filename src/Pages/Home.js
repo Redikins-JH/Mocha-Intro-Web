@@ -1,6 +1,7 @@
 import React from 'react';
 import MainImage from '../Components/MainImage';
 import Introduce from '../Components/Introduce';
+import ClassList from '../Components/ClassList';
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -21,6 +22,7 @@ function Home() {
     <div className={classes.root}>
       <MainImage/>
       <Introduce/>
+      <ClassList/>
     </div>
     
   );

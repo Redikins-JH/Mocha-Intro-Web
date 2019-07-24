@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
   },
   navLink: {
     position: 'absolute',
-    right: '20px',
+    right: '7px',
     display: 'flex',
   }
 }));
