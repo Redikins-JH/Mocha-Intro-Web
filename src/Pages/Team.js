@@ -1,8 +1,17 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 
-function Team() {
+const useStyles = makeStyles(theme => ({
+  root: {
+    margin: '20px',
+    minHeight: '600px'
+  }
+}))
+
+export default function Team() {
+  const classes = useStyles();
   return (
-    <div style={{margin: "20px"}}>팀원 모집 합니다. <br/>
+    <div className={classes.root}>팀원 모집 합니다. <br/>
     - 디자이너 <br/>
     - 개발자 <br/>
     - 마케터 <br/>
@@ -10,4 +19,4 @@ function Team() {
   );
 }
 
-export default Team;
+

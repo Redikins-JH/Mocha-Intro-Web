@@ -9,8 +9,13 @@ import Link from '@material-ui/core/Link';
 import MenuItem from '@material-ui/core/MenuItem';
 
 const useStyles = makeStyles(theme => ({
-  appbar: {
-    flexGrow: 1,
+  root: {
+    display: 'flex'
+  },
+  navLink: {
+    position: 'absolute',
+    right: '20px',
+    display: 'flex',
   }
 }));
 
@@ -18,24 +23,25 @@ function Navbar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.appbar}>
-        <AppBar position="static">
+    <div className={classes.root}>
+        <AppBar position="relation">
           <Toolbar variant="dense">
             <Typography variant="h6" color="secondary">
               Mocha Class
             </Typography>
+            <div className={classes.navLink}>
+              <MenuItem>
+                <Link component={RouterLink} to="/" color="secondary">Home</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link component={RouterLink} to="/Team" color="secondary">Team</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link component={RouterLink} to="/Class" color="secondary">Class</Link>
+              </MenuItem>
+            </div>
           </Toolbar>
-          <Toolbar variant="dense">
-            <MenuItem>
-              <Link component={RouterLink} to="/" color="secondary">Home</Link>
-            </MenuItem>
-            <MenuItem>
-              <Link component={RouterLink} to="/Team" color="secondary">Team</Link>
-            </MenuItem>
-            <MenuItem>
-              <Link component={RouterLink} to="/Class" color="secondary">Class</Link>
-            </MenuItem>
-          </Toolbar>
+          
         </AppBar>
     </div>
   );

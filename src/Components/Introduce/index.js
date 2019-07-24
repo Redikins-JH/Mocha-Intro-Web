@@ -5,10 +5,14 @@ import Card from '@material-ui/core/Card';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    display: 'flex',
+    flexDirection: 'column',
     width: "100%",
  
   },
   card: {
+    display: 'flex',
+    flexDirection: 'column',
     padding: theme.spacing(3, 2),
     margin: "30px",
     height: "150px"
